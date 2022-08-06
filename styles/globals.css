@@ -1,9 +1,60 @@
-html,
-body {
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+html, body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-padding-top: 9em;
+  background-color: lavender;
+  font-family: Catamaran;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lavender;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: midnightblue;
+}
+
+h1 {
+  font-size: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 1em;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  font-size: 20px;
 }
 
 a {
@@ -13,14 +64,11 @@ a {
 
 * {
   box-sizing: border-box;
+  /* cursor: none; */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+@media (max-width: 900px) {
+  html, body {
+    scroll-padding-top: 3em;
   }
 }

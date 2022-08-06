@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    padding: 0 2em 2em 2em;
+}
+
+.container:after {
+    content: "";
+    background: midnightblue;
+    position: absolute;
+    height: 5px;
+    width: 90%;
+}
