@@ -4,6 +4,53 @@
   width: 100%;
 }
 
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+.title {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: lavender;
+  text-shadow: 3px 3px black;
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.body {
+  padding-top: 2em;
+  background-color: lavender;
+}
+
+#experience {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
 .footer {
   height: 3rem;
 }

@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
+import * as smoothscroll from 'smoothscroll-polyfill';
 import Head from 'next/head'
 import Nav from './nav'
-import Title from './title'
 import Experience from './experience'
 import Projects from './projects'
 import Skills from './skills'
@@ -9,6 +10,10 @@ import Education from './education'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+    useEffect(() => {
+        smoothscroll.polyfill();
+    }, [])
+
     return (
         <div className={styles.wrapper}>
             <Head>
@@ -17,25 +22,28 @@ export default function Home() {
             </Head>
 
             <div className={styles.container}>
-                <Nav />
-                <section id='title'>
-                    <Title />
-                </section>
+                <Nav className={styles.nav}/>
+                <header id='title' className={styles.header}>
+                    <img src="/profile.png" className={styles.background}/>
+                    <h1 data-aos="fade-right" data-aos-once="true" className={styles.title}>Hi! I&apos;m Brandon!</h1>
+                </header>
 
-                <section id='experience'>
-                    <Experience />
-                </section>
-                
-                <section id='projects'>
-                    <Projects />
-                </section>
-                
-                <section id='skills'>
-                    <Skills />
-                </section>
+                <section className={styles.body}>
+                    <section id='experience'>
+                        <Experience />
+                    </section>
+                    
+                    <section id='projects'>
+                        <Projects />
+                    </section>
+                    
+                    <section id='skills'>
+                        <Skills />
+                    </section>
 
-                <section id='education'>
-                    <Education />
+                    <section id='education'>
+                        <Education />
+                    </section>
                 </section>
             </div>
             <div className={styles.footer}></div>
