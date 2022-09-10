@@ -1,18 +1,36 @@
-.container {
-    width: 100%;
-    padding: 0 2em 2em 2em;
+.wrapper {
+    margin-bottom: 5rem;
 }
 
-.container:after {
-    content: "";
-    background: midnightblue;
-    position: absolute;
-    height: 5px;
-    width: 90%;
+.pink {
+    color: pink;
 }
 
-.subheading {
+.title {
     color: gray;
-    padding: 0;
-    margin-top: -1em;
+    font-size: 50px;
+    border-top: 1px solid gray;
+    margin-bottom: 2rem;
+}
+
+.header {
+    color: white;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: lightgray;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.body ul {
+    list-style: none;
+    color: lightgray;
+    font-size: 20px;
+}
+
+.body ul li:before {
+    content: "▹ ";
+    color: pink;
 }

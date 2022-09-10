@@ -1,52 +1,45 @@
-import { useEffect } from 'react';
-import * as smoothscroll from 'smoothscroll-polyfill';
+import React from 'react';
 import Head from 'next/head'
+import Intro from './intro'
 import Nav from './nav'
+import About from './about'
 import Experience from './experience'
 import Projects from './projects'
-import Skills from './skills'
-import Education from './education'
+import Footer from './footer';
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-    useEffect(() => {
-        smoothscroll.polyfill();
-    }, [])
-
     return (
         <div className={styles.wrapper}>
             <Head>
                 <title>Brandon Wong</title>
-                <link href="https://fonts.googleapis.com/css2?family=Catamaran" rel='stylesheet'></link>
             </Head>
 
             <div className={styles.container}>
-                <Nav className={styles.nav}/>
-                <header id='title' className={styles.header}>
-                    <img src="/profile.png" className={styles.background}/>
-                    <h1 data-aos="fade-right" data-aos-once="true" className={styles.title}>Hi! I&apos;m Brandon!</h1>
-                </header>
+                <Nav />
+                <div className={styles.main}>
+                    <div className={styles.intro} id='intro'>
+                        <Intro />
+                    </div>
 
-                <section className={styles.body}>
-                    <section id='experience'>
-                        <Experience />
-                    </section>
-                    
-                    <section id='projects'>
-                        <Projects />
-                    </section>
-                    
-                    <section id='skills'>
-                        <Skills />
-                    </section>
+                    <div className={styles.body}>
+                        <section id='about'>
+                            <About />
+                        </section>
+                        
+                        <section id='experience'>
+                            <Experience />
+                        </section>
+                        
+                        <section id='projects'>
+                            <Projects />
+                        </section>
+                    </div>
 
-                    <section id='education'>
-                        <Education />
-                    </section>
-                </section>
+                    <Footer />
+                </div>
             </div>
-            <div className={styles.footer}></div>
         </div>
     )
 }

@@ -1,0 +1,29 @@
+.wrapper {
+    margin-bottom: 5rem;
+}
+
+.wrapper p {
+    color: white;
+    font-size: 50px;
+}
+
+.wrapper ul {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+}
+
+.wrapper ul li:before {
+    content: "▹ ";
+    color: pink;
+}
+
+.wrapper ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.wrapper ul li a:hover {
+    color: pink;
+}

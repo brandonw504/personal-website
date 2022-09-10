@@ -1,28 +1,65 @@
-.container {
-    width: 100%;
-    padding: 0 2em 2em 2em;
+.wrapper {
+    margin-bottom: 5rem;
 }
 
-.container:after {
-    content: "";
-    background: midnightblue;
-    position: absolute;
-    height: 5px;
-    width: 90%;
-}
-
-.subheading {
+.title {
     color: gray;
-    padding: 0;
-    margin-top: -1em;
+    font-size: 50px;
+    border-top: 1px solid gray;
+    margin-bottom: 2rem;
 }
 
-.link {
-    text-decoration: underline;
-    transition: all 0.2s ease;
+.body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
 }
 
-.link:hover {
-    color: white;
-    transform: scale(110%);
+.tile {
+    background-color: black;
+    max-height: 100%;
+    width: 100%;
+    max-width: 25rem;
+    border-radius: 1rem;
+    border: 1px solid pink;
+    transition: all 250ms ease;
+}
+
+.tile:hover {
+    transform: scale(103%);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.header a {
+    color: black;
+    transition: all 250ms ease;
+}
+
+.header a:hover {
+    color: pink;
+}
+
+.tile p {
+    color: pink;
+    font-size: 25px;
+}
+
+.description {
+    color: lightgray;
+    font-size: 20px;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.tools {
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    color: gray;
+    font-size: 17px;
 }

@@ -1,61 +1,33 @@
-import { FaTimes } from 'react-icons/fa'
-import { HiMenu } from 'react-icons/hi'
-import { AiOutlineArrowUp, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { FiMail } from 'react-icons/fi'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import styles from '../styles/nav.module.css'
 
-const prefix = '/portfolio';
-
-function Nav() {
+export default function Nav() {
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 1000, once: true });
     }, []);
 
-    const [click, setClick] = useState('false');
-
-    const handleClick = () => {
-        if (click === 'false') {
-            setClick('true');
-        } else {
-            setClick('false');
-        }
-    }
-
-    const closeMobileMenu = () => setClick('false');
-
-    const MenuButton = () => {
-        if (click === 'false') {
-            return <HiMenu className={styles.hamburger} onClick={handleClick} size={40}/>
-        } else {
-            return <FaTimes className={styles.hamburger} onClick={handleClick} size={40}/>
-        }
-    }
-
     return (
-        <div>
-            <nav className={styles.navbar}>
-                <MenuButton />
-                <div className={styles.container} visible={click}>
-                    <ul className={styles.list} data-aos="fade-bottom" visible={click}>
-                        <li><a className={styles.listItem} href='#title' onClick={closeMobileMenu}>HOME</a></li>
-                        <li><a className={styles.listItem} href='#experience' onClick={closeMobileMenu}>EXPERIENCE</a></li>
-                        <li><a className={styles.listItem} href='#projects' onClick={closeMobileMenu}>PROJECTS</a></li>
-                        <li><a className={styles.listItem} href='#skills' onClick={closeMobileMenu}>SKILLS</a></li>
-                        <li><a className={styles.listItem} href='#education' onClick={closeMobileMenu}>EDUCATION</a></li>
-                        <li><a className={styles.listItem} href={prefix + '/resume.pdf'} target="blank" onClick={closeMobileMenu}>RESUME</a></li>
-                    </ul>
-                    <ul className={styles.socials} data-aos="fade-bottom" visible={click}>
-                        <li><a className={styles.socialItem} href='https://github.com/brandonw504' target="blank" onClick={closeMobileMenu}><AiFillGithub className={styles.icon} size={40} /></a></li>
-                        <li><a className={styles.socialItem} href='https://www.linkedin.com/in/brandonw504' target="blank" onClick={closeMobileMenu}><AiFillLinkedin className={styles.icon} size={40} /></a></li>
-                    </ul>
-                </div>
-                <a href='#title'><AiOutlineArrowUp className={styles.top} size={40} /></a>
-            </nav>
+        <div className={styles.wrapper}>
+            <div className={styles.container}>
+                <ul className={styles.list}>
+                    <li data-aos="fade-up"><a href='#intro'>home</a></li>
+                    <li data-aos="fade-up" data-aos-delay='100'><a href='#about'>about</a></li>
+                    <li data-aos="fade-up" data-aos-delay='200'><a href='#experience'>experience</a></li>
+                    <li data-aos="fade-up" data-aos-delay='300'><a href='#projects'>projects</a></li>
+                    <li data-aos="fade-up" data-aos-delay='400'><a href='/resume.pdf' target='blank'>resume</a></li>
+                </ul>
+            </div>
+            
+            <ul className={styles.socials}>
+                <li data-aos="fade-up" data-aos-delay='500'><a href='https://github.com/brandonw504' target="blank"><AiFillGithub size={40} /></a></li>
+                <li data-aos="fade-up" data-aos-delay='600'><a href='https://www.linkedin.com/in/brandonw504' target="blank"><AiFillLinkedin size={40} /></a></li>
+                <li data-aos="fade-up" data-aos-delay='700'><a href='mailto::brandonw504@outlook.com'><FiMail size={40} /></a></li>
+            </ul>
         </div>
     )
 }
-
-export default Nav
