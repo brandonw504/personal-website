@@ -6,8 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
+    background-color: var(--backgroundSecondary);
     height: 100vh;
     width: 15vw;
 }
@@ -19,23 +18,24 @@
 }
 
 .list li {
+    font-size: var(--fontSmall);
     padding: 0.5rem 1rem 0.5rem;
-    border-right: 2px solid gray;
-    transition: all 350ms ease;
-}
-
-.list a {
-    color: white;
-    text-decoration: none;
+    border-right: 2px solid var(--detailSecondary);
     transition: all 350ms ease;
 }
 
 .list li:hover {
-    border-right: 2px solid pink;
+    border-right: 2px solid var(--detailPrimary);
+}
+
+.list a {
+    color: var(--textPrimary);
+    text-decoration: none;
+    transition: all 250ms ease;
 }
 
 .list a:hover {
-    color: pink;
+    color: var(--textHighlight);
 }
 
 .socials {
@@ -45,12 +45,12 @@
 }
 
 .socials a {
-    color: white;
+    color: var(--textPrimary);
     text-decoration: none;
     margin: 0.5rem;
     transition: all 250ms ease;
 }
 
 .socials a:hover {
-    color: pink;
+    color: var(--textHighlight);
 }

@@ -3,14 +3,8 @@
     flex-direction: column;
 }
 
-.title {
-    color: white;
-    font-size: 75px;
-    font-weight: 400;
-}
-
 .subtitle {
-    color: lightgray;
-    font-size: 25px;
-    max-width: 35vw;
+    color: var(--textSecondary);
+    font-size: var(--fontSubheading);
+    max-width: 40vw;
 }

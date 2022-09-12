@@ -2,27 +2,22 @@
     margin-bottom: 5rem;
 }
 
-.title {
-    color: gray;
-    font-size: 50px;
-    border-top: 1px solid gray;
-    margin-bottom: 2rem;
-}
-
-.body {
+.grid {
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
 .tile {
-    background-color: black;
+    background-color: var(--backgroundTertiary);
     max-height: 100%;
     width: 100%;
     max-width: 25rem;
     border-radius: 1rem;
-    border: 1px solid pink;
+    border: 1px solid var(--detailPrimary);
     transition: all 250ms ease;
+    padding: 1rem;
 }
 
 .tile:hover {
@@ -33,33 +28,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1rem;
 }
 
 .header a {
-    color: black;
+    color: var(--textPrimary);
     transition: all 250ms ease;
 }
 
 .header a:hover {
-    color: pink;
-}
-
-.tile p {
-    color: pink;
-    font-size: 25px;
-}
-
-.description {
-    color: lightgray;
-    font-size: 20px;
-    margin: 0 1rem 2rem 1rem;
+    color: var(--textHighlight);
 }
 
 .tools {
     position: relative;
-    left: 1rem;
-    bottom: 1rem;
-    color: gray;
-    font-size: 17px;
+    color: var(--textSecondary);
+    font-size: var(--fontSmall);
 }

@@ -3,27 +3,31 @@
 }
 
 .wrapper p {
-    color: white;
-    font-size: 50px;
+    color: var(--textPrimary);
+    font-size: var(--fontHeading);
 }
 
 .wrapper ul {
     list-style: none;
-    color: white;
-    font-size: 25px;
+    color: var(--textPrimary);
+    font-size: var(--fontMedium);
 }
 
 .wrapper ul li:before {
     content: "▹ ";
-    color: pink;
+    color: var(--detailPrimary);
+}
+
+.wrapper ul li {
+    margin-bottom: 1rem;
 }
 
 .wrapper ul li a {
-    color: white;
+    color: var(--textPrimary);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
 .wrapper ul li a:hover {
-    color: pink;
+    color: var(--textHighlight);
 }

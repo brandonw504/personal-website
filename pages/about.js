@@ -2,7 +2,18 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import techStackData from '../data/techStackData'
 import styles from '../styles/about.module.css'
+
+const TechStackList = ({data}) => {
+    return(
+        <ul>
+            {data.map((item) => (
+                <li>{item}</li>
+            ))}
+        </ul>
+    )
+}
 
 export default function About() {
     useEffect(() => {
@@ -11,51 +22,34 @@ export default function About() {
 
     return (
         <div className={styles.wrapper}>
-            <div className={styles.title} data-aos="fade-up">about me</div>
+            <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
                 <div className={styles.body}>
-                    <div className={styles.subtitle} data-aos="fade-up">I'm currently a second year at <span className={styles.pink}>UC Davis</span>. 
-                    I'm majoring in <span className={styles.pink}>Computer Science</span> and minoring in <span className={styles.pink}>Technology Management</span>. 
-                    I'm also part of <span className={styles.pink}>#include</span>, a group that creates websites for clubs and businesses around Davis.</div>
+                    <p data-aos="fade-up">I'm currently a second year at <span className={styles.highlight}>UC Davis</span>. 
+                    I'm majoring in <span className={styles.highlight}>Computer Science</span> and minoring in <span className={styles.highlight}>Technology Management</span>. 
+                    I'm also part of <span className={styles.highlight}>#include</span>, a group that creates websites for clubs and businesses around Davis.</p>
                    
-                    <p className={styles.skillsHeader} data-aos="fade-up">Technologies I use:</p>
+                    <h3 data-aos="fade-up">Technologies I use:</h3>
                     <div data-aos="zoom-in-up">
                         <div className={styles.skills}>
                             <div>
-                                <p>Tools</p>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>MongoDB</li>
-                                    <li>Node.js</li>
-                                    <li>Cocoapods</li>
-                                </ul>
+                                <h4>Tools</h4>
+                                <TechStackList data={techStackData.tools}></TechStackList>
                             </div>
 
                             <div>
-                                <p>Languages</p>
-                                <ul>
-                                    <li>Swift</li>
-                                    <li>Javascript</li>
-                                    <li>C++</li>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>HTML &amp; CSS</li>
-                                </ul>
+                                <h4>Languages</h4>
+                                <TechStackList data={techStackData.languages}></TechStackList>
                             </div>
 
                             <div>
-                                <p>Frameworks/Libraries</p>
-                                <ul>
-                                    <li>SwiftUI</li>
-                                    <li>Express.js</li>
-                                    <li>React.js &amp; Next.js</li>
-                                    <li>Realm</li>
-                                </ul>
+                                <h4>Frameworks/Libraries</h4>
+                                <TechStackList data={techStackData.frameworks}></TechStackList>
                             </div>
                         </div>
                     </div>
 
-                    <div className={styles.subtitle} data-aos="fade-up">In my free time, I enjoy weightlifting, gaming, performing magic, playing chess, and exploring the great outdoors.</div>
+                    <p data-aos="fade-up">In my free time, I enjoy weightlifting, gaming, performing magic, playing chess, and exploring the great outdoors.</p>
                 </div>
 
                 <div data-aos="zoom-in-up">

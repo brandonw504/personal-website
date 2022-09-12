@@ -10,11 +10,58 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
+
+  --backgroundPrimary: #343F4F;
+  --backgroundSecondary: #4a525d;
+  --backgroundTertiary: black;
+  --detailPrimary: pink;
+  --detailSecondary: gray;
+  --sectionHeaderColor: gray;
+  --textPrimary: white;
+  --textSecondary: lightgray;
+  --textHighlight: pink;
+
+  --fontTitle: 4.5rem;
+  --fontHeading: 3.5rem;
+  --fontSubheading: 1.8rem;
+  --fontMedium: 1.5rem;
+  --fontSmall: 1.3rem;
 }
 
 body {
   display: flex;
-  background-color: #343F4F;
+  background-color: var(--backgroundPrimary);
+}
+
+h1 {
+  color: var(--textPrimary);
+  font-size: var(--fontTitle);
+  font-weight: 400;
+}
+
+h2 {
+  color: var(--sectionHeaderColor);
+  font-size: var(--fontHeading);
+  border-top: 1px solid var(--sectionHeaderColor);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--textPrimary);
+  font-size: var(--fontSubheading);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--textHighlight);
+  font-size: var(--fontMedium);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: white;
+  font-size: var(--fontSmall);
+  margin-bottom: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -22,10 +69,10 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #343F4F;
+  background: var(--backgroundPrimary);
 }
  
 ::-webkit-scrollbar-thumb {
-  background: pink;
+  background: var(--detailPrimary);
   border-radius: 3px;
 }

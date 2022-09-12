@@ -12,14 +12,14 @@ export default function Intro() {
 
     return (
         <div className={styles.wrapper}>
-            <div className={styles.title}>
+            <h1>
                 <TypewriterComponent
                     onInit={(typewriter) => {
                         typewriter.typeString("Hey! I'm <span style='color: pink;'>Brandon</span>.")
                         .start();
                     }}
                 />
-            </div>
+            </h1>
             <div className={styles.subtitle} data-aos="fade-up">I'm an iOS and full-stack developer from the Bay Area. 
             I love building apps that add utility to users' lives and exploring new technologies.</div>
         </div>

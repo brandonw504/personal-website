@@ -2,35 +2,23 @@
     margin-bottom: 5rem;
 }
 
-.pink {
-    color: pink;
-}
-
-.title {
-    color: gray;
-    font-size: 50px;
-    border-top: 1px solid gray;
-    margin-bottom: 2rem;
-}
-
-.header {
-    color: white;
-    font-size: 30px;
+.highlight {
+    color: var(--detailPrimary);
 }
 
 .subtitle {
-    color: lightgray;
-    font-size: 20px;
+    color: var(--textSecondary);
+    font-size: var(--fontMedium);
     margin-bottom: 1rem;
 }
 
 .body ul {
     list-style: none;
-    color: lightgray;
-    font-size: 20px;
+    color: var(--textPrimary);
+    font-size: var(--fontSmall);
 }
 
 .body ul li:before {
     content: "▹ ";
-    color: pink;
+    color: var(--detailPrimary);
 }

@@ -2,15 +2,8 @@
     margin-bottom: 3rem;
 }
 
-.pink {
-    color: pink;
-}
-
-.title {
-    color: gray;
-    font-size: 50px;
-    border-top: 1px solid gray;
-    margin-bottom: 2rem;
+.highlight {
+    color: var(--detailPrimary);
 }
 
 .container {
@@ -22,26 +15,13 @@
     margin-right: 3rem;
 }
 
-.subtitle {
-    color: white;
-    font-size: 20px;
-    max-width: 35vw;
-    margin-bottom: 2rem;
-}
-
-.skillsHeader {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 1rem;
-}
-
 .skills {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
-    background-color: black;
+    width: fit-content;
+    background-color: var(--backgroundTertiary);
     border-radius: 1rem;
-    border: 1px solid pink;
+    border: 1px solid var(--detailPrimary);
     margin-bottom: 2rem;
     transition: all 250ms ease;
 }
@@ -50,34 +30,29 @@
     transform: scale(103%);
 }
 
-.skills p {
-    font-size: 30px;
-    color: pink;
-    margin-bottom: 0.5rem;
-}
-
 .skills div {
     padding: 1rem;
 }
 
 .skills div:not(:last-child) {
-    border-right: 1px solid pink;
+    border-right: 1px solid var(--detailPrimary);
 }
 
 .skills ul {
     list-style: none;
-    color: lightgray;
+    color: var(--textSecondary);
+    font-size: var(--fontSmall);
 }
 
 .skills ul li:before {
     content: "▹ ";
-    color: pink;
+    color: var(--detailPrimary);
 }
 
 .profile {
     max-height: 20rem;
     border-radius: 1rem;
-    border: 1px solid pink;
+    border: 1px solid var(--detailPrimary);
     transition: all 250ms ease;
 }
 
