@@ -6,19 +6,38 @@
     color: var(--detailPrimary);
 }
 
+.jobTitle {
+    color: var(--textPrimary);
+    font-size: var(--fontSubheading);
+}
+
+.company {
+    color: var(--textHighlight);
+    font-size: var(--fontSubheading);
+}
+
 .subtitle {
+    display: block;
     color: var(--textSecondary);
     font-size: var(--fontMedium);
     margin-bottom: 1rem;
 }
 
-.body ul {
-    list-style: none;
+.description {
+    display: block;
     color: var(--textPrimary);
     font-size: var(--fontSmall);
 }
 
-.body ul li:before {
+.description:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.description:last-child {
+    margin-bottom: -2rem;
+}
+
+.description:before {
     content: "▹ ";
     color: var(--detailPrimary);
 }

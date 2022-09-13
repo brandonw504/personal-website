@@ -59,3 +59,13 @@
 .profile:hover {
     transform: scale(103%);
 }
+
+@media(max-width: 1300px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .profile {
+        margin-bottom: 1rem;
+    }
+}

@@ -44,3 +44,19 @@
     color: var(--textSecondary);
     font-size: var(--fontSmall);
 }
+
+@media(max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tile {
+        max-width: 100%;
+    }
+}
+  
+  @media(max-width: 664px) {
+    .grid {
+        grid-gap: 1rem;
+    }
+}

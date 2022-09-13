@@ -12,7 +12,8 @@ const routes = [
     { name: "home", href: "#intro" },
     { name: "about", href: "#about" },
     { name: "experience", href: "#experience" },
-    { name: "projects", href: "#projects" }
+    { name: "projects", href: "#projects" },
+    { name: "contact", href: "#footer" }
 ]
 
 const socials = [
@@ -34,14 +35,14 @@ export default function Nav() {
             <div className={styles.container}>
                 <ul className={styles.list}>
                     {routes.map((route, i) => (
-                        <li data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href}>{route.name}</a></li>
+                        <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href}>{route.name}</a></li>
                     ))}
                 </ul>
             </div>
             
             <ul className={styles.socials}>
                 {socials.map((social, i) => (
-                    <li data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank">{social.element}</a></li>
+                    <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank">{social.element}</a></li>
                 ))}
             </ul>
         </div>

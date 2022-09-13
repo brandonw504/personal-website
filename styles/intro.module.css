@@ -8,3 +8,9 @@
     font-size: var(--fontSubheading);
     max-width: 40vw;
 }
+
+@media(max-width: 1024px) {
+    .subtitle {
+        max-width: 100%;
+    }
+}

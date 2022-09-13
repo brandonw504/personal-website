@@ -54,3 +54,23 @@
 .socials a:hover {
     color: var(--textHighlight);
 }
+
+@media(max-width: 1300px) {
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem
+    }
+}
+
+@media(max-width: 1024px) {
+    .wrapper {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 664px) {
+    .wrapper {
+        display: none;
+    }
+}

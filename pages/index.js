@@ -37,7 +37,9 @@ export default function Home() {
                         </section>
                     </div>
 
-                    <Footer />
+                    <section id='footer'>
+                        <Footer />
+                    </section>
                 </div>
             </div>
         </div>
