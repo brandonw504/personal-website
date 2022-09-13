@@ -52,7 +52,7 @@ export default function Nav() {
     return (
         <nav className={styles.navbar}>
             <MenuButton />
-            <div className='wrapper'>
+            <div className={click === 'true' ? styles.activeWrapper : styles.inactiveWrapper}>
                 <div className={styles.container}>
                     <ul className={styles.list}>
                         {routes.map((route, i) => (
@@ -67,31 +67,6 @@ export default function Nav() {
                     ))}
                 </ul>
             </div>
-            <style suppressHydrationWarning> {`
-                .wrapper {
-                    position: fixed;
-                    left: 0;
-                    top: 0;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: var(--backgroundSecondary);
-                    height: 100vh;
-                    width: 15vw;
-                }
-
-                @media(max-width: 664px) {
-                    .wrapper {
-                        z-index: 1;
-                        width: 40vw;
-                        background: hsl(0 0% 100% / 0.1);
-                        backdrop-filter: blur(1rem);
-                        transform: ${click === 'true' ? 'translateX(0)' : 'translateX(-100%)'};
-                        transition: transform 350ms ease-out;
-                    }
-                }
-            `} </style>
         </nav>
     )
 }
