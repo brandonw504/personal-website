@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Head from 'next/head'
 import Intro from './intro'
 import Nav from './nav'
