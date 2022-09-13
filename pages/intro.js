@@ -21,7 +21,7 @@ export default function Intro() {
                 />
             </h1>
             <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
-            I love building apps that add utility to users&apos; lives and exploring new technologies.</div>
+            I love exploring new technologies and building apps that add utility to users&apos; lives.</div>
         </div>
     )
 }

@@ -22,7 +22,7 @@ export default function Footer() {
 
     return (
         <div className={styles.wrapper}>
-            <p data-aos="fade-up">Heading out? Contact me!</p>
+            <p data-aos="fade-up">Contact me!</p>
             <ul>
                 {socials.map((social, i) => (
                     <li key={i} data-aos="fade-up">

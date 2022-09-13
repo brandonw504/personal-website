@@ -41,7 +41,7 @@
 
 .skills ul {
     list-style: none;
-    color: var(--textSecondary);
+    color: var(--textPrimary);
     font-size: var(--fontSmall);
 }
 

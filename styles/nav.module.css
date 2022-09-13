@@ -58,6 +58,41 @@
 .socials a:hover {
     color: var(--textHighlight);
 }
+  
+.tooltip .tooltipText {
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    background-color: var(--backgroundTertiary);
+    color: var(--textPrimary);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    transition: opacity 350ms ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    margin-bottom: 10px;
+}
+
+.tooltip .tooltipText::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--backgroundTertiary) transparent transparent transparent;
+  }
+  
+.tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
 
 @media(max-width: 1300px) {
     .wrapper {

@@ -16,10 +16,10 @@ const routes = [
 ]
 
 const socials = [
-    { element: <AiFillGithub size={30} />, link: "https://github.com/brandonw504" },
-    { element: <AiFillLinkedin size={30} />, link: "https://www.linkedin.com/in/brandonw504" },
-    { element: <FiMail size={30} />, link: "mailto::brandonw504@outlook.com" },
-    { element: <CgFileDocument size={30} />, link: "/resume.pdf" }
+    { name: "Github", element: <AiFillGithub size={30} />, link: "https://github.com/brandonw504" },
+    { name: "LinkedIn", element: <AiFillLinkedin size={30} />, link: "https://www.linkedin.com/in/brandonw504" },
+    { name: "Email", element: <FiMail size={30} />, link: "mailto::brandonw504@outlook.com" },
+    { name: "Resume", element: <CgFileDocument size={30} />, link: "/resume.pdf" }
 ]
 
 export default function Nav() {
@@ -39,7 +39,12 @@ export default function Nav() {
             
             <ul className={styles.socials}>
                 {socials.map((social, i) => (
-                    <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank">{social.element}</a></li>
+                    <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}>
+                        <div className={styles.tooltip}>
+                            <a href={social.link} target="blank">{social.element}</a>
+                            <span className={styles.tooltipText}>{social.name}</span>
+                        </div>
+                    </li>
                 ))}
             </ul>
         </div>
