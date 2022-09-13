@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import { FaTimes } from 'react-icons/fa'
-import { HiMenu } from 'react-icons/hi'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FiMail } from 'react-icons/fi'
@@ -29,44 +27,21 @@ export default function Nav() {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
-    const [click, setClick] = useState('false');
-
-    const handleClick = () => {
-        if (click === 'false') {
-            setClick('true');
-        } else {
-            setClick('false');
-        }
-    }
-
-    const closeMobileMenu = () => setClick('false');
-
-    const MenuButton = () => {
-        if (click === 'false') {
-            return <HiMenu className={styles.menu} onClick={handleClick} size={30}/>
-        } else {
-            return <FaTimes className={styles.menu} onClick={handleClick} size={30}/>
-        }
-    }
-
     return (
-        <nav className={styles.navbar}>
-            <MenuButton />
-            <div className={click === 'true' ? styles.activeWrapper : styles.inactiveWrapper}>
-                <div className={styles.container}>
-                    <ul className={styles.list}>
-                        {routes.map((route, i) => (
-                            <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href} onClick={closeMobileMenu}>{route.name}</a></li>
-                        ))}
-                    </ul>
-                </div>
-                
-                <ul className={styles.socials}>
-                    {socials.map((social, i) => (
-                        <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank" onClick={closeMobileMenu}>{social.element}</a></li>
+        <div className={styles.wrapper}>
+            <div className={styles.container}>
+                <ul className={styles.list}>
+                    {routes.map((route, i) => (
+                        <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href}>{route.name}</a></li>
                     ))}
                 </ul>
             </div>
-        </nav>
+            
+            <ul className={styles.socials}>
+                {socials.map((social, i) => (
+                    <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank">{social.element}</a></li>
+                ))}
+            </ul>
+        </div>
     )
 }

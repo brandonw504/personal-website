@@ -2,7 +2,7 @@
     display: none;
 }
 
-.activeWrapper, .inactiveWrapper {
+.wrapper {
     position: fixed;
     left: 0;
     top: 0;
@@ -72,36 +72,7 @@
 }
 
 @media(max-width: 664px) {
-    .menu {
-        display: block;
-        position: fixed;
-        left: 1rem;
-        top: 1rem;
-        z-index: 2;
-        color: var(--textPrimary);
-    }
-
-    .activeWrapper, .inactiveWrapper {
-        z-index: 1;
-        width: 40vw;
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-        transition: transform 350ms ease-out;
-    }
-
-    .inactiveWrapper {
-        transform: translateX(-100%);
-    }
-
-    .activeWrapper {
-        transform: translateX(0);
-    }
-
-    .list li {
-        border-right: none;
-    }
-
-    .list li:hover {
-        border-right: none;
+    .wrapper {
+        display: none;
     }
 }
