@@ -79,11 +79,6 @@
         top: 1rem;
         z-index: 2;
         color: var(--textPrimary);
-        transition: all 250ms ease;
-    }
-    
-    .menu:hover {
-        color: var(--textHighlight);
     }
 
     .activeWrapper, .inactiveWrapper {

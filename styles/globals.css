@@ -80,7 +80,7 @@ p {
 @media (max-width: 1024px) {
   html {
     --fontTitle: 3rem;
-    --fontHeading: 1.8rem;
+    --fontHeading: 2rem;
     --fontSubheading: 1.5rem;
     --fontMedium: 1.3rem;
     --fontSmall: 1rem;
