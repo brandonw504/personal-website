@@ -25,8 +25,8 @@ export default function About() {
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
                 <div className={styles.body}>
-                    <p data-aos="fade-up">I'm currently a second year at <span className={styles.highlight}>UC Davis</span>. 
-                    I'm majoring in <span className={styles.highlight}>Computer Science</span> and minoring in <span className={styles.highlight}>Technology Management</span>. 
+                    <p data-aos="fade-up">I'm currently a second year at <span className={styles.highlight}>UC Davis</span>, 
+                    majoring in <span className={styles.highlight}>Computer Science</span> and minoring in <span className={styles.highlight}>Technology Management</span>. 
                     I'm also part of <span className={styles.highlight}>#include</span>, a group that creates websites for clubs and businesses around Davis.</p>
                    
                     <h3 data-aos="fade-up">Technologies I use:</h3>

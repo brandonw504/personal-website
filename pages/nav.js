@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { FaTimes } from 'react-icons/fa'
+import { HiMenu } from 'react-icons/hi'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FiMail } from 'react-icons/fi'
@@ -24,27 +25,48 @@ const socials = [
 ]
 
 export default function Nav() {
-    const router = useRouter()
-
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
+    const [click, setClick] = useState('false');
+
+    const handleClick = () => {
+        if (click === 'false') {
+            setClick('true');
+        } else {
+            setClick('false');
+        }
+    }
+
+    const closeMobileMenu = () => setClick('false');
+
+    const MenuButton = () => {
+        if (click === 'false') {
+            return <HiMenu className={styles.menu} onClick={handleClick} size={30}/>
+        } else {
+            return <FaTimes className={styles.menu} onClick={handleClick} size={30}/>
+        }
+    }
+
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.container}>
-                <ul className={styles.list}>
-                    {routes.map((route, i) => (
-                        <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href}>{route.name}</a></li>
+        <nav className={styles.navbar}>
+            <MenuButton />
+            <div className={styles.wrapper} visible={click}>
+                <div className={styles.container}>
+                    <ul className={styles.list}>
+                        {routes.map((route, i) => (
+                            <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href} onClick={closeMobileMenu}>{route.name}</a></li>
+                        ))}
+                    </ul>
+                </div>
+                
+                <ul className={styles.socials}>
+                    {socials.map((social, i) => (
+                        <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank" onClick={closeMobileMenu}>{social.element}</a></li>
                     ))}
                 </ul>
             </div>
-            
-            <ul className={styles.socials}>
-                {socials.map((social, i) => (
-                    <li key={social.link} data-aos="fade-up" data-aos-delay={`${(i * 100) + 400}`}><a href={social.link} target="blank">{social.element}</a></li>
-                ))}
-            </ul>
-        </div>
+        </nav>
     )
 }
