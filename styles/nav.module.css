@@ -82,7 +82,7 @@
         transition: all 250ms ease;
     }
     
-    .menu:hover, .menu:focus {
+    .menu:hover {
         color: var(--textHighlight);
     }
 
