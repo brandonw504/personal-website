@@ -33,7 +33,7 @@ export default function About() {
                     <div data-aos="zoom-in-up">
                         <div className={styles.skills}>
                             {techStackData.map((stack) => (
-                                <div>
+                                <div key={stack.name}>
                                     <h4>{stack.name}</h4>
                                     <TechStackList data={stack.contents}></TechStackList>
                                 </div>
