@@ -11,36 +11,30 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
     return (
-        <div className={styles.wrapper}>
-            <Head>
-                <title>Brandon Wong</title>
-            </Head>
+        <div className={styles.container}>
+            <Nav />
+            <div className={styles.main}>
+                <div className={styles.intro} id='intro'>
+                    <Intro />
+                </div>
 
-            <div className={styles.container}>
-                <Nav />
-                <div className={styles.main}>
-                    <div className={styles.intro} id='intro'>
-                        <Intro />
-                    </div>
-
-                    <div className={styles.body}>
-                        <section id='about'>
-                            <About />
-                        </section>
-                        
-                        <section id='experience'>
-                            <Experience />
-                        </section>
-                        
-                        <section id='projects'>
-                            <Projects />
-                        </section>
-                    </div>
-
-                    <section id='footer'>
-                        <Footer />
+                <div className={styles.body}>
+                    <section id='about'>
+                        <About />
+                    </section>
+                    
+                    <section id='experience'>
+                        <Experience />
+                    </section>
+                    
+                    <section id='projects'>
+                        <Projects />
                     </section>
                 </div>
+
+                <section id='footer'>
+                    <Footer />
+                </section>
             </div>
         </div>
     )

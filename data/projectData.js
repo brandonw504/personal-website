@@ -1,19 +1,19 @@
 const projectData = [
     {
         title: "Shopping Total",
-        description: "A mobile shopping list app in which users can scan price tags with text recognition and track their purchases. Item prices are stored in a MongoDB Atlas instance and made available through a REST API created with Node.",
+        description: "An iOS shopping list app in which users can scan price tags with text recognition and track their purchases. Item prices are stored in a MongoDB Atlas instance and made available through a REST API created with Node.",
         techStack: "SwiftUI, Node, Express, Realm, and MongoDB",
         githubLink: "https://github.com/brandonw504/label-scanner"
     },
     {
         title: "Carpool App",
-        description: "A mobile app in which users can find others traveling in a similar direction and carpool together. Matching users is done on a backend server made accessible through a REST API created using Node and Express. Users are alerted through Pusher's publish and subscribe framework, and user data is stored on a MongoDB NoSQL database.",
+        description: "An iOS app in which users can find others traveling in a similar direction and carpool together. Matching users is done on a backend server made accessible through a REST API created using Node and Express. Users are alerted through Pusher's publish and subscribe framework, and user data is stored on a MongoDB NoSQL database.",
         techStack: "SwiftUI, Node, Express, Pusher, Realm, and MongoDB",
         githubLink: "https://github.com/brandonw504/carpool-app"
     },
     {
         title: "Field Event Tracker",
-        description: "A mobile app used to collect marks for field events in track and field. Greatly improved efficiency in recording and ranking athletes' marks at track meets by switching from paper to a digital medium.",
+        description: "An iOS app used to collect marks for field events in track and field. Greatly improved efficiency in recording and ranking athletes' marks at track meets by switching from paper to a digital medium.",
         techStack: "SwiftUI",
         githubLink: "https://github.com/brandonw504/field-event-tracker"
     }
