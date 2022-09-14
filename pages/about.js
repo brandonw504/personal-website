@@ -25,27 +25,19 @@ export default function About() {
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
                 <div className={styles.body}>
-                    <p data-aos="fade-up">I&apos;m currently a second year at <span className={styles.highlight}>UC Davis</span>, 
-                    majoring in <span className={styles.highlight}>Computer Science</span> and minoring in <span className={styles.highlight}>Technology Management</span>. 
-                    I&apos;m also part of <span className={styles.highlight}>#include</span>, a group that creates websites for clubs and businesses around Davis.</p>
+                    <p data-aos="fade-up">I&apos;m currently a second year &#40;expected graduation <span>June 2024</span>&#41; at <span>UC Davis</span>, 
+                    majoring in <span>Computer Science</span> and minoring in <span>Technology Management</span>. 
+                    I&apos;m also a software engineer at <span>#include</span>, creating websites for clubs and businesses around Davis.</p>
                    
                     <h3 data-aos="fade-up">Technologies I use:</h3>
                     <div data-aos="zoom-in-up">
                         <div className={styles.skills}>
-                            <div>
-                                <h4>Tools</h4>
-                                <TechStackList data={techStackData.tools}></TechStackList>
-                            </div>
-
-                            <div>
-                                <h4>Languages</h4>
-                                <TechStackList data={techStackData.languages}></TechStackList>
-                            </div>
-
-                            <div>
-                                <h4>Frameworks/Libraries</h4>
-                                <TechStackList data={techStackData.frameworks}></TechStackList>
-                            </div>
+                            {techStackData.map((stack) => (
+                                <div>
+                                    <h4>{stack.name}</h4>
+                                    <TechStackList data={stack.contents}></TechStackList>
+                                </div>
+                            ))}
                         </div>
                     </div>
 

@@ -1,11 +1,10 @@
-import React from 'react';
-import Head from 'next/head'
+import React from 'react'
 import Intro from './intro'
 import Nav from './nav'
 import About from './about'
 import Experience from './experience'
 import Projects from './projects'
-import Footer from './footer';
+import Footer from './footer'
 
 import styles from '../styles/Home.module.css'
 

@@ -2,10 +2,6 @@
     margin-bottom: 5rem;
 }
 
-.highlight {
-    color: var(--detailPrimary);
-}
-
 .jobTitle {
     color: var(--textPrimary);
     font-size: var(--fontSubheading);

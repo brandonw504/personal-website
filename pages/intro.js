@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import TypewriterComponent from 'typewriter-effect';
+import { useEffect } from 'react'
+import TypewriterComponent from 'typewriter-effect'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -21,7 +21,8 @@ export default function Intro() {
                 />
             </h1>
             <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
-            I love exploring new technologies and building apps that add utility to users&apos; lives.</div>
+            I love exploring new technologies and building apps that add utility to users&apos; lives.
+            Solving problems at scale is the core of engineering and has always piqued my interest.</div>
         </div>
     )
 }

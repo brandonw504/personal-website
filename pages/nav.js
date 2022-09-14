@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FiMail } from 'react-icons/fi'
