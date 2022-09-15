@@ -9,7 +9,7 @@ const projectData = [
         githubLink: "https://github.com/brandonw504/label-scanner"
     },
     {
-        title: "Carpool App",
+        title: "Carpool App (in progress)",
         description: `An iOS app in which users can find others traveling in a similar direction and carpool together. 
         Matching users is done on a backend server made accessible through a REST API created using Node and Express.
         Users are alerted through Pusher's publish and subscribe framework, and user data is stored on a MongoDB NoSQL database.`,
