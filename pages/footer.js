@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 import styles from '../styles/footer.module.css'
 
 const socials = [
-    { element: <FiMail size={40} />, description: "brandonw504@outlook.com", link: "mailto::brandonw504@outlook.com" },
+    { element: <FiMail size={40} />, description: "brandonw504@outlook.com", link: "mailto:brandonw504@outlook.com" },
     { element: <AiOutlinePhone size={40} />, description: "(408) 229-3774", link: "tel:+14082293774" },
     { element: <AiFillGithub size={40} />, description: "brandonw504", link: "https://github.com/brandonw504" },
     { element: <AiFillLinkedin size={40} />, description: "brandonw504", link: "https://www.linkedin.com/in/brandonw504" },

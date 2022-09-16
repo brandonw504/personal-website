@@ -2,7 +2,7 @@ const experienceData = [
     {
         name: "#include",
         title: "Software Engineer @ ",
-        time: "SEPT 2021 - JUN 2022",
+        time: "Sept 2021 - Jun 2022",
         description: [
             "Built and styled a dynamic art gallery website using Next.js.",
             "Learned industry web development practices in React.js.",

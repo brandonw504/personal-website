@@ -15,7 +15,7 @@
 .subtitle {
     display: block;
     color: var(--textSecondary);
-    font-size: var(--fontMedium);
+    font-size: var(--fontSmall);
     margin-bottom: 1rem;
 }
 

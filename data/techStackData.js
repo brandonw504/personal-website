@@ -9,7 +9,7 @@ const techStackData = [
     },
     {
         name: "Libraries/Frameworks",
-        contents: ["SwiftUI", "Express", "React.js", "Next.js", "Realm"]
+        contents: ["SwiftUI", "Express", "React.js", "Next.js", "Realm", "MaterialUI"]
     }
 ]
 
