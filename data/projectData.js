@@ -3,8 +3,8 @@ const projectData = [
         title: "Shopping Total",
         description: `An iOS shopping list app in which users can scan price tags with text recognition and track their purchases.
         Item prices are stored in a MongoDB Atlas instance and made available through a REST API created with Node.
-        Stores can see which items users are buying at which stores and make business decisions with this information.
-        Users can decide where to shop based on easily accessible current prices.`,
+        Stores can call this API see which items users are buying at which stores and make business decisions with this information.
+        Users can decide where to shop based on logged prices.`,
         techStack: "SwiftUI, Node, Express, Realm, and MongoDB",
         githubLink: "https://github.com/brandonw504/label-scanner"
     },
