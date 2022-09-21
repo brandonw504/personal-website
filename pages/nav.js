@@ -7,14 +7,6 @@ import 'aos/dist/aos.css'
 
 import styles from '../styles/nav.module.css'
 
-const routes = [
-    { name: "home", href: "#intro" },
-    { name: "about", href: "#about" },
-    { name: "experience", href: "#experience" },
-    { name: "projects", href: "#projects" },
-    { name: "contact", href: "#footer" }
-]
-
 const socials = [
     { name: "Github", element: <AiFillGithub size={30} />, link: "https://github.com/brandonw504" },
     { name: "LinkedIn", element: <AiFillLinkedin size={30} />, link: "https://www.linkedin.com/in/brandonw504" },
@@ -34,10 +26,10 @@ export default function Nav({ refs }) {
     const handleScreenChange = useCallback(() => {
         for (let i = refs.length - 1; i >= 0; i--) {
             if (refs[i].ref.current) {
-            if (window.pageYOffset + window.innerHeight * 0.3 >= refs[i].ref.current.offsetTop) {
-                setActiveLink(refs[i].name);
-                break
-            }
+                if (window.pageYOffset + window.innerHeight * 0.3 >= refs[i].ref.current.offsetTop) {
+                    setActiveLink(refs[i].name);
+                    break
+                }
             }
         }
     }, [refs])
@@ -57,7 +49,7 @@ export default function Nav({ refs }) {
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <ul className={styles.list}>
-                    {refs.map((item, i) => (
+                    {refs?.map((item, i) => (
                         <li key={i} className={activeLink === item.name ? styles.activeLink : styles.inactiveLink} data-aos="fade-up" data-aos-delay={`${i + 1}00`} onClick={() => { handleScroll(item.ref) }}>
                             <p className={activeLink === item.name ? styles.activeText : styles.inactiveText}>{item.name}</p>
                         </li>
