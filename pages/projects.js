@@ -35,6 +35,4 @@ const Projects = React.forwardRef(({ onClick, href }, ref) => {
 
 export default Projects
 
-// export default function Projects() {
-    
-// }
+Projects.displayName = 'Projects'

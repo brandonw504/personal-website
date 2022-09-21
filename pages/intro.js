@@ -29,6 +29,4 @@ const Intro = React.forwardRef(({ onClick, href }, ref) => {
 
 export default Intro
 
-// export default function Intro() {
-    
-// }
+Intro.displayName = 'Intro'

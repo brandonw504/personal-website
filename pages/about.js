@@ -53,8 +53,6 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
     )
 })
 
-export default About
+About.displayName = 'About'
 
-// export default function About() {
-    
-// }
+export default About

@@ -87,8 +87,6 @@ const Experience = React.forwardRef(({ onClick, href }, ref) => {
     )
 })
 
-export default Experience
+Experience.displayName = 'Experience'
 
-// export default function Experience() {
-    
-// }
+export default Experience

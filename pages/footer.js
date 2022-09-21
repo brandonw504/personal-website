@@ -37,6 +37,4 @@ const Footer = React.forwardRef(({ onClick, href }, ref) => {
 
 export default Footer
 
-// export default function Footer() {
-    
-// }
+Footer.displayName = 'Footer'
