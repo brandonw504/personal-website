@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -6,13 +6,13 @@ import 'aos/dist/aos.css'
 import projectData from '../data/projectData'
 import styles from '../styles/projects.module.css'
 
-export default function Projects() {
+const Projects = React.forwardRef(({ onClick, href }, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (
-        <div className={styles.wrapper}>
+        <div ref={ref} className={styles.wrapper}>
             <h2 data-aos="fade-up">projects</h2>
             <ul className={styles.grid}>
                 {projectData.map((project, i) => (
@@ -31,4 +31,10 @@ export default function Projects() {
             </ul>
         </div>
     )
-}
+})
+
+export default Projects
+
+// export default function Projects() {
+    
+// }

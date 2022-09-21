@@ -18,27 +18,43 @@
 .list {
     list-style: none;
     text-align: right;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.list li {
+.activeLink {
     font-size: var(--fontSmall);
-    padding: 0.5rem 1rem 0.5rem;
-    border-right: 2px solid var(--detailSecondary);
+    /* padding: 0.5rem 1rem 0.5rem;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+    border-right: 2px solid var(--detailPrimary); */
     transition: all 350ms ease;
 }
 
-.list li:hover {
+.inactiveLink {
+    font-size: var(--fontSmall);
+    /* padding: 0.5rem 1rem 0.5rem;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+    border-right: 2px solid var(--detailSecondary); */
+    transition: all 350ms ease;
+}
+
+/* .inactiveLink:hover {
     border-right: 2px solid var(--detailPrimary);
+} */
+
+.activeText {
+    font-size: var(--fontSmall);
+    color: var(--textHighlight);
+    transition: all 350ms ease;
 }
 
-.list a {
-    color: var(--textPrimary);
-    text-decoration: none;
-    transition: all 250ms ease;
+.inactiveText {
+    font-size: var(--fontSmall);
+    transition: all 350ms ease;
 }
 
-.list a:hover {
+.inactiveText:hover {
     color: var(--textHighlight);
 }
 

@@ -1,17 +1,17 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import TypewriterComponent from 'typewriter-effect'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import styles from '../styles/intro.module.css'
 
-export default function Intro() {
+const Intro = React.forwardRef(({ onClick, href }, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (
-        <div className={styles.wrapper}>
+        <div ref={ref} className={styles.wrapper}>
             <h1>
                 <TypewriterComponent
                     onInit={(typewriter) => {
@@ -25,4 +25,10 @@ export default function Intro() {
             Solving problems at scale is the core of engineering and has always piqued my interest.</div>
         </div>
     )
-}
+})
+
+export default Intro
+
+// export default function Intro() {
+    
+// }

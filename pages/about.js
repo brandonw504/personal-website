@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -15,13 +15,13 @@ const TechStackList = ({data}) => {
     )
 }
 
-export default function About() {
+const About = React.forwardRef(({ onClick, href }, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (
-        <div className={styles.wrapper}>
+        <div ref={ref} className={styles.wrapper}>
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
                 <div className={styles.body}>
@@ -51,4 +51,10 @@ export default function About() {
             
         </div>
     )
-}
+})
+
+export default About
+
+// export default function About() {
+    
+// }

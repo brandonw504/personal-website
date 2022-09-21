@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { AiFillGithub, AiFillLinkedin, AiOutlinePhone } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
 import { FiMail } from 'react-icons/fi'
@@ -15,13 +15,13 @@ const socials = [
     { element: <CgFileDocument size={40} />, description: "Resume", link: "/resume.pdf" }
 ]
 
-export default function Footer() {
+const Footer = React.forwardRef(({ onClick, href }, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (
-        <div className={styles.wrapper}>
+        <div ref={ref} className={styles.wrapper}>
             <p data-aos="fade-up">Contact me!</p>
             <ul>
                 {socials.map((social, i) => (
@@ -33,4 +33,10 @@ export default function Footer() {
             </ul>
         </div>
     )
-}
+})
+
+export default Footer
+
+// export default function Footer() {
+    
+// }

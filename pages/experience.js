@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
 import { Tabs, Tab, Box, Typography } from "@mui/material"
 import PropTypes from 'prop-types'
@@ -34,11 +35,11 @@ function a11yProps(index) {
     }
 }
 
-export default function Experience() {
-    const [value, setValue] = useState(0);
+const Experience = React.forwardRef(({ onClick, href }, ref) => {
+    const [value, setValue] = useState(0)
 
     const handleChange = (event, newValue) => {
-        setValue(newValue);
+        setValue(newValue)
     }
 
     useEffect(() => {
@@ -47,7 +48,7 @@ export default function Experience() {
     }, [])
 
     return (
-        <div className={styles.wrapper}>
+        <div ref={ref} className={styles.wrapper}>
             <h2 data-aos="fade-up">experience</h2>
             <div data-aos="fade-up" className={styles.body}>
                 <Box sx={{ width: "fit-content", borderBottom: 1, borderColor: "gray" }}>
@@ -84,4 +85,10 @@ export default function Experience() {
             </div>
         </div>
     )
-}
+})
+
+export default Experience
+
+// export default function Experience() {
+    
+// }
