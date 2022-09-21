@@ -48,16 +48,11 @@ export default function Nav({ refs }) {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <ul className={styles.list}>
-                    {refs?.map((item, i) => (
-                        <li key={i} className={activeLink === item.name ? styles.activeLink : styles.inactiveLink} data-aos="fade-up" data-aos-delay={`${i + 1}00`} onClick={() => { handleScroll(item.ref) }}>
-                            <p className={activeLink === item.name ? styles.activeText : styles.inactiveText}>{item.name}</p>
-                        </li>
-                    ))}
-                </ul>
-                {/* {routes.map((route, i) => (
-                    <li key={route.name} data-aos="fade-up" data-aos-delay={`${i + 1}00`}><a href={route.href}>{route.name}</a></li>
-                ))} */}
+                {refs?.map((item, i) => (
+                    <div key={i} data-aos="fade-up" data-aos-delay={`${i + 1}00`} onClick={ () => { handleScroll(item.ref) }}>
+                        <p className={activeLink === item.name ? styles.activeText : styles.inactiveText}>{item.name}</p>
+                    </div>
+                ))}
             </div>
             
             <ul className={styles.socials}>

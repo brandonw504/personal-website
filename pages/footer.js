@@ -15,13 +15,13 @@ const socials = [
     { element: <CgFileDocument size={40} />, description: "Resume", link: "/resume.pdf" }
 ]
 
-const Footer = React.forwardRef(({ onClick, href }, ref) => {
+export default function Footer() {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
 
     return (
-        <div ref={ref} className={styles.wrapper}>
+        <div className={styles.wrapper}>
             <p data-aos="fade-up">Contact me!</p>
             <ul>
                 {socials.map((social, i) => (
@@ -33,8 +33,4 @@ const Footer = React.forwardRef(({ onClick, href }, ref) => {
             </ul>
         </div>
     )
-})
-
-export default Footer
-
-Footer.displayName = 'Footer'
+}

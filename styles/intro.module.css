@@ -1,5 +1,11 @@
 .wrapper {
     display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
     flex-direction: column;
 }
 
@@ -10,6 +16,10 @@
 }
 
 @media(max-width: 1024px) {
+    .wrapper {
+        height: 100%;
+    }
+
     .subtitle {
         max-width: 100%;
     }

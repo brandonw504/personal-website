@@ -12,17 +12,19 @@ const Intro = React.forwardRef(({ onClick, href }, ref) => {
 
     return (
         <div ref={ref} className={styles.wrapper}>
-            <h1>
-                <TypewriterComponent
-                    onInit={(typewriter) => {
-                        typewriter.typeString("Hey! I'm <span style='color: pink;'>Brandon</span>.")
-                        .start();
-                    }}
-                />
-            </h1>
-            <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
-            I love exploring new technologies and building apps that add utility to users&apos; lives.
-            Solving problems at scale is the core of engineering and has always piqued my interest.</div>
+            <div className={styles.container}>
+                <h1>
+                    <TypewriterComponent
+                        onInit={(typewriter) => {
+                            typewriter.typeString("Hey! I'm <span style='color: pink;'>Brandon</span>.")
+                            .start();
+                        }}
+                    />
+                </h1>
+                <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
+                I love exploring new technologies and building apps that add utility to users&apos; lives.
+                Solving problems at scale is the core of engineering and has always piqued my interest.</div>
+            </div>
         </div>
     )
 })

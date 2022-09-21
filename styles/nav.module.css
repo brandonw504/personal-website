@@ -15,38 +15,15 @@
     width: 15vw;
 }
 
-.list {
-    list-style: none;
+.container {
+    display: block;
     text-align: right;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
-
-.activeLink {
-    font-size: var(--fontSmall);
-    /* padding: 0.5rem 1rem 0.5rem;
-    margin-top: -1.5rem;
-    margin-bottom: -1.5rem;
-    border-right: 2px solid var(--detailPrimary); */
-    transition: all 350ms ease;
-}
-
-.inactiveLink {
-    font-size: var(--fontSmall);
-    /* padding: 0.5rem 1rem 0.5rem;
-    margin-top: -1.5rem;
-    margin-bottom: -1.5rem;
-    border-right: 2px solid var(--detailSecondary); */
-    transition: all 350ms ease;
-}
-
-/* .inactiveLink:hover {
-    border-right: 2px solid var(--detailPrimary);
-} */
 
 .activeText {
     font-size: var(--fontSmall);
     color: var(--textHighlight);
-    transition: all 350ms ease;
 }
 
 .inactiveText {
