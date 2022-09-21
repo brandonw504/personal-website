@@ -18,6 +18,7 @@
 @media(max-width: 1024px) {
     .wrapper {
         height: 100%;
+        margin-bottom: 5rem;
     }
 
     .subtitle {
