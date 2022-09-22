@@ -33,6 +33,7 @@
 
 .inactiveText:hover {
     color: var(--textHighlight);
+    cursor: pointer;
 }
 
 .socials {
