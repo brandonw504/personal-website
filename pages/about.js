@@ -27,7 +27,7 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
                 <div className={styles.body}>
                     <p data-aos="fade-up">I&apos;m currently a <span>second year</span> &#40;expected graduation <span>June 2024</span>&#41; at <span>UC Davis</span>, 
                     majoring in <span>Computer Science</span> and minoring in <span>Technology Management</span>. 
-                    I&apos;ve worked as a software engineer at <span>#include</span>, creating websites for clubs and businesses around Davis.</p>
+                    I&apos;ve volunteered as a software engineer at <span>#include</span>, creating websites for clubs and businesses around Davis.</p>
                    
                     <h3 data-aos="fade-up">Technologies I use:</h3>
                     <div data-aos="zoom-in-up">
