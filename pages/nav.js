@@ -11,7 +11,7 @@ const socials = [
     { name: "Github", element: <AiFillGithub size={30} />, link: "https://github.com/brandonw504" },
     { name: "LinkedIn", element: <AiFillLinkedin size={30} />, link: "https://www.linkedin.com/in/brandonw504" },
     { name: "Email", element: <FiMail size={30} />, link: "mailto:brandonw504@outlook.com" },
-    { name: "Resume", element: <CgFileDocument size={30} />, link: "/resume.pdf" }
+    { name: "Resume", element: <CgFileDocument size={30} />, link: "/Brandon_Wong_Resume.pdf" }
 ]
 
 export default function Nav({ refs }) {

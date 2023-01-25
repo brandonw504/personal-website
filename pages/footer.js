@@ -12,7 +12,7 @@ const socials = [
     { element: <AiOutlinePhone size={40} />, description: "(408) 229-3774", link: "tel:+14082293774" },
     { element: <AiFillGithub size={40} />, description: "brandonw504", link: "https://github.com/brandonw504" },
     { element: <AiFillLinkedin size={40} />, description: "brandonw504", link: "https://www.linkedin.com/in/brandonw504" },
-    { element: <CgFileDocument size={40} />, description: "Resume", link: "/resume.pdf" }
+    { element: <CgFileDocument size={40} />, description: "Resume", link: "/Brandon_Wong_Resume.pdf" }
 ]
 
 export default function Footer() {

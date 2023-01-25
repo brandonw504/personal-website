@@ -1,5 +1,13 @@
 const experienceData = [
     {
+        name: "AggieWorks",
+        title: "Software Engineer @ ",
+        time: "Jan 2023 - Present",
+        description: [
+            "Will be working on a roommate matching app for UC Davis Housing in React Native."
+        ]
+    },
+    {
         name: "#include",
         title: "Software Engineer @ ",
         time: "Sept 2021 - Jun 2022",
