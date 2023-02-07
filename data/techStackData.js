@@ -5,11 +5,11 @@ const techStackData = [
     },
     {
         name: "Languages",
-        contents: ["Swift", "Javascript", "C++", "Java", "Python", "HTML & CSS"]
+        contents: ["C++", "Swift", "Javascript", "Typescript", "Java", "Python", "HTML & CSS"]
     },
     {
         name: "Libraries/Frameworks",
-        contents: ["SwiftUI", "Express", "React.js", "Next.js", "Realm", "MaterialUI", "Knex.js"]
+        contents: ["SwiftUI", "Express", "React Native", "React.js", "Next.js", "Realm", "MaterialUI"]
     }
 ]
 
