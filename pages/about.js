@@ -24,6 +24,10 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
         <div ref={ref} className={styles.wrapper}>
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
+                <div data-aos="zoom-in-up">
+                    <img src="profile.png" alt="Profile picture" className={styles.profile}></img>
+                </div>
+
                 <div className={styles.body}>
                     <p data-aos="fade-up">
                         My first encounter with code was in third grade playing around with <a href="https://bonsaijs.org"><span>BonsaiJS</span></a>, a graphics library that allowed me to animate shapes.
@@ -47,10 +51,6 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
                     </div>
 
                     <p data-aos="fade-up">In my free time, I love weightlifting, cooking/baking, and exploring the great outdoors!</p>
-                </div>
-
-                <div data-aos="zoom-in-up">
-                    <img src="profile.png" alt="Profile picture" className={styles.profile}></img>
                 </div>
             </div>
             
