@@ -25,10 +25,16 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
                 <div className={styles.body}>
-                    <p data-aos="fade-up">I&apos;m currently a <span>junior</span> at <span>UC Davis</span>, majoring in <span>Computer Science</span> and minoring in <span>Technology Management</span>. 
-                    I&apos;ve volunteered as a software engineer at <span>AggieWorks</span> and <span>#include</span>, doing web and mobile app development for clients such as UC Davis Student Housing and various clubs on campus.</p>
+                    <p data-aos="fade-up">
+                        My first encounter with code was in third grade playing around with <a href="https://bonsaijs.org"><span>BonsaiJS</span></a>, a graphics library that allowed me to animate shapes.
+                        I had a lot of fun making bubbles follow my cursor, and I&apos;ve enjoyed coding ever since!
+                    </p>
+                    <p data-aos="fade-up">
+                        Now, I&apos;m a <span>junior</span> at <span>UC Davis</span>, majoring in <span>Computer Science</span> and minoring in <span>Technology Management</span>.
+                        I&apos;ve had the opportunity to work on several engaging and fulfilling projects while volunteering as a software engineer at <span>AggieWorks</span> and <span>#include</span>, as well as at <span>Alpha Phi Omega</span>, my service fraternity!
+                    </p>
                    
-                    <h3 data-aos="fade-up">Technologies I use:</h3>
+                    <h3 data-aos="fade-up">Technologies I use</h3>
                     <div data-aos="zoom-in-up">
                         <div className={styles.skills}>
                             {techStackData.map((stack) => (
@@ -40,7 +46,7 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
                         </div>
                     </div>
 
-                    <p data-aos="fade-up">In my free time, I enjoy weightlifting, performing magic, playing chess, and exploring the great outdoors.</p>
+                    <p data-aos="fade-up">In my free time, I love weightlifting, cooking/baking, and exploring the great outdoors!</p>
                 </div>
 
                 <div data-aos="zoom-in-up">

@@ -15,6 +15,10 @@
     margin-right: 3rem;
 }
 
+.body a {
+    text-decoration: none;
+}
+
 .skills {
     display: flex;
     flex-direction: row;
