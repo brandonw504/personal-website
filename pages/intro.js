@@ -22,8 +22,7 @@ const Intro = React.forwardRef(({ onClick, href }, ref) => {
                     />
                 </h1>
                 <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
-                I love exploring new technologies and solving problems at scale.
-                This summer, I&apos;ll be interning with Apple&apos;s Shazam team!</div>
+                I love exploring new technologies and solving problems at scale. I'm interested in machine learning and digital signal processing.</div>
             </div>
         </div>
     )

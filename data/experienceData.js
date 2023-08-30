@@ -1,10 +1,13 @@
 const experienceData = [
     {
         name: "Apple",
-        title: "Incoming Software Engineering Intern @ ",
+        title: "Software Engineering Intern @ ",
         time: "June 2023 - Sept 2023",
         description: [
-            "Will be working with the Shazam Frameworks team using Swift."
+            "Worked on Shazam Platform Services, doing iOS and macOS development in Swift.",
+            "Performed digital signal processing as part of a research project.",
+            "Prototyped and pitched a new feature to the Health team leadership.",
+            "Performed code reviews, and learned best coding and design practices."
         ]
     },
     {
