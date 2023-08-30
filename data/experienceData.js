@@ -16,7 +16,7 @@ const experienceData = [
         time: "Jan 2023 - Present",
         description: [
             "Worked on a roommate matching app for UC Davis Housing in React Native.",
-            "Integrated custom image caching and several UI components."
+            "Implemented database functions, image caching, and many reusable UI components."
         ]
     },
     {
