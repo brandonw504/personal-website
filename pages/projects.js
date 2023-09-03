@@ -16,7 +16,7 @@ const Projects = React.forwardRef(({ onClick, href }, ref) => {
             <h2 data-aos="fade-up">projects</h2>
             <ul className={styles.grid}>
                 {projectData.map((project, i) => (
-                    <li key={project.title} data-aos="zoom-in-up" data-aos-delay={`${i + 2}00`}>
+                    <li key={project.title} data-aos="zoom-in-up">
                         <div className={styles.tile}>
                             <div className={styles.header}>
                                 <h4>{project.title}</h4>
