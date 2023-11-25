@@ -21,7 +21,7 @@ const experienceData = [
     {
         name: "AggieWorks",
         title: "Software Engineer @ ",
-        time: "Jan 2023 - Present",
+        time: "Jan 2023 - June 2023",
         description: [
             "Deployed a roommate matching iOS app for UC Davis Housing for thousands of freshmen.",
             "Implemented database functions, image caching, and 10+ reusable UI components."
