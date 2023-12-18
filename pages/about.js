@@ -34,8 +34,8 @@ const About = React.forwardRef(({ onClick, href }, ref) => {
                         I had a lot of fun making bubbles follow my cursor, and I&apos;ve enjoyed coding ever since!
                     </p>
                     <p data-aos="fade-up">
-                        Now, I&apos;m a <span>third year</span> at <span>UC Davis</span>, double majoring in <span>Computer Science</span> and <span>Statistics</span> on the Machine Learning track, and minoring in <span>Technology Management</span>.
-                        This past summer, I worked as a software engineering intern at <span>Apple</span> on the <span>Shazam</span> team, developing in Swift and doing digital signal processing.
+                        Now, I&apos;m a third year at UC Davis, double majoring in <span>Computer Science</span> and <span>Statistics</span> on the Machine Learning track, and minoring in <span>Technology Management</span>.
+                        This past summer, I worked as a software engineering intern at <span>Apple</span> on the Shazam team, developing in Swift and doing digital signal processing.
                         I&apos;ve had the opportunity to work on several engaging and fulfilling projects while volunteering as a software engineer at <span>AggieWorks</span> and <span>#include</span>, as well as at <span>Alpha Phi Omega</span>, my service fraternity!
                     </p>
                    
