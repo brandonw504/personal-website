@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 import projectData from '../data/projectData'
 import styles from '../styles/projects.module.css'
 
-const Projects = React.forwardRef(({ onClick, href }, ref) => {
+const Projects = React.forwardRef((_, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);
@@ -18,12 +18,13 @@ const Projects = React.forwardRef(({ onClick, href }, ref) => {
                 {projectData.map((project, i) => (
                     <li key={project.title} data-aos="zoom-in-up">
                         <div className={styles.tile}>
-                            <div className={styles.header}>
-                                <h4>{project.title}</h4>
-                                <a href={project.githubLink} target='blank'><AiFillGithub size={40}/></a>
+                            <div>
+                                <div className={styles.header}>
+                                    <h4>{project.title}</h4>
+                                    <a href={project.githubLink} target='blank'><AiFillGithub size={40}/></a>
+                                </div>
+                                <p>{project.description}</p>
                             </div>
-                            
-                            <p>{project.description}</p>
                             <div className={styles.tools}>{project.techStack}</div>
                         </div>
                     </li>

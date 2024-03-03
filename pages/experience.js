@@ -35,7 +35,7 @@ function a11yProps(index) {
     }
 }
 
-const Experience = React.forwardRef(({ onClick, href }, ref) => {
+const Experience = React.forwardRef((_, ref) => {
     const [value, setValue] = useState(0)
 
     const handleChange = (event, newValue) => {

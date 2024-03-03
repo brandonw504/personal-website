@@ -43,7 +43,7 @@ export default function Nav({ refs }) {
             window.removeEventListener('scroll', handleScreenChange)
             window.removeEventListener('resize', handleScreenChange)
         }
-    }, [])
+    }, [handleScreenChange])
 
     return (
         <div className={styles.wrapper}>

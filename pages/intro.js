@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 
 import styles from '../styles/intro.module.css'
 
-const Intro = React.forwardRef(({ onClick, href }, ref) => {
+const Intro = React.forwardRef((_, ref) => {
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
     }, []);

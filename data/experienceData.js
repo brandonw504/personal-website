@@ -4,10 +4,10 @@ const experienceData = [
         title: "Software Engineering Intern @ ",
         time: "June 2023 - Sept 2023",
         description: [
-            "Developed Swift applications for Shazam Platform Services, benefiting over 100 million users.",
-            "Documented my research for a digital signal processing project.",
-            "Prototyped and pitched a new feature to the Health team leadership.",
-            "Performed code reviews, and learned best coding and design practices."
+            "Developed macOS Music Recognition and ShazamKit features in Swift for >100 million monthly users",
+            "Independently started a digital signal processing research project, developing a functional prototype",
+            "Took initiative to pitch a new feature prototyped for an intern contest to the Health team leadership",
+            "Performed meticulous code reviews and learned best coding and design practices"
         ]
     },
     {
@@ -15,7 +15,19 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
-            "Developing a judging algorithm and website for 1000 people at California’s largest hackathon."
+            "Jointly developed a secure judging app and responsive landing website for 1000 people",
+            "Implemented CRUD operations with embeddings in MongoDB, and server actions in Next.js",
+            "Led technical workshops, teaching SwiftUI, Next.js, and full stack development"
+        ]
+    },
+    {
+        name: "#include",
+        title: "Technical Manager @ ",
+        time: "Sept 2023 - Present",
+        description: [
+            "Developing a content management system and an e-store framework for local clients in Davis",
+            "Performed code reviews, enforcing industry standards to ensure site reliability and scalability",
+            "Built and styled a responsive art gallery website using Next.js, managing 6 engineers’ code"
         ]
     },
     {
@@ -23,19 +35,8 @@ const experienceData = [
         title: "Software Engineer @ ",
         time: "Jan 2023 - June 2023",
         description: [
-            "Deployed a roommate matching iOS app for UC Davis Housing for thousands of freshmen.",
-            "Implemented database functions, image caching, and 10+ reusable UI components."
-        ]
-    },
-    {
-        name: "#include",
-        title: "Software Engineer @ ",
-        time: "Sept 2021 - June 2022",
-        description: [
-            "Built and styled a dynamic and responsive art gallery website using Next.js.",
-            "Used server-side rendering for SEO and improved page loading.",
-            "Collaborated with back-end developers on the art piece API.",
-            "Managed 6 engineers' changes to the codebase using Github."
+            "Built and deployed a roommate matching app in React Native for UC Davis Student Housing",
+            "Implemented database functions, image caching, and 10+ reusable and reliable UI components"
         ]
     }
 ]

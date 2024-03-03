@@ -1,15 +1,15 @@
 const techStackData = [
     {
         name: "Tools",
-        contents: ["Git", "MongoDB", "Node.js", "PostgreSQL", "Apollo GraphQL", "MySQL"]
+        contents: ["Git", "Node.js", "PostgreSQL", "MongoDB", "Apollo GraphQL"]
     },
     {
         name: "Languages",
-        contents: ["C++", "Swift", "Javascript", "Java", "Python", "Objective-C", "HTML & CSS", "SQL", "PHP"]
+        contents: ["C++", "Swift", "Python", "Javascript", "Typescript", "Java", "HTML & CSS", "SQL", "R"]
     },
     {
         name: "Libraries/Frameworks",
-        contents: ["SwiftUI", "Express.js", "React Native", "React.js", "Next.js", "Realm", "Laravel"]
+        contents: ["SwiftUI", "Next.js", "React.js", "Express.js", "React Native", "Realm"]
     }
 ]
 
