@@ -27,7 +27,7 @@ const experienceData = [
         description: [
             "Developing a content management system and an e-store framework for local clients in Davis",
             "Performed code reviews, enforcing industry standards to ensure site reliability and scalability",
-            "Built and styled a responsive art gallery website using Next.js, managing 6 engineers’ code"
+            "Learned about system design and tradeoffs when architecting codebases using GraphQL and Next.js"
         ]
     },
     {
