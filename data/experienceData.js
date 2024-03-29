@@ -15,7 +15,7 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
-            "Jointly developed a secure judging app and responsive landing website for 1000 people",
+            "Built hackdavis.io landing page and a secure full-stack judging app for a 1000 person hackathon",
             "Implemented CRUD operations with embeddings in MongoDB, and server actions in Next.js",
             "Led technical workshops, teaching SwiftUI, Next.js, and full stack development"
         ]
