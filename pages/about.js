@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
+import Image from 'next/image'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import profilePicture from '../public/profile.png'
 import techStackData from '../data/techStackData'
 import styles from '../styles/about.module.css'
 
@@ -24,10 +26,6 @@ const About = React.forwardRef((_, ref) => {
         <div ref={ref} className={styles.wrapper}>
             <h2 data-aos="fade-up">about me</h2>
             <div className={styles.container}>
-                <div data-aos="zoom-in-up">
-                    <img src="profile.png" alt="Profile picture" className={styles.profile}></img>
-                </div>
-
                 <div className={styles.body}>
                     <p data-aos="fade-up">
                         My first encounter with code was in third grade playing around with <a href="https://bonsaijs.org" target="blank"><span>BonsaiJS</span></a>, a graphics library that allowed me to animate shapes.
@@ -53,8 +51,11 @@ const About = React.forwardRef((_, ref) => {
 
                     <p data-aos="fade-up">In my free time, I love weightlifting, cooking/baking, crocheting, and exploring the great outdoors!</p>
                 </div>
+
+                <div data-aos="zoom-in-up">
+                    <Image src={profilePicture} alt="Profile picture" className={styles.profile}></Image>
+                </div>
             </div>
-            
         </div>
     )
 })
