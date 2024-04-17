@@ -22,7 +22,7 @@ const Intro = React.forwardRef((_, ref) => {
                     />
                 </h1>
                 <div className={styles.subtitle} data-aos="fade-up">I&apos;m an iOS and full-stack developer from the Bay Area. 
-                I love exploring new technologies and solving problems at scale. Recently, I&apos;ve been learning about machine learning and digital signal processing.</div>
+                I love exploring new technologies and solving problems at scale. Recently, I&apos;ve been learning about machine learning, computer vision, and digital signal processing.</div>
             </div>
         </div>
     )
