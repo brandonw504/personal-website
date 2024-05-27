@@ -27,7 +27,7 @@ const experienceData = [
         description: [
             "Developing a content management system and an e-store framework for local clients in Davis",
             "Performed code reviews, enforcing industry standards to ensure site reliability and scalability",
-            "Learned about system design and tradeoffs when architecting codebases using GraphQL and Next.js"
+            "Learned system design when architecting codebases using Next.js, Apollo GraphQL, and PostgreSQL"
         ]
     },
     {
