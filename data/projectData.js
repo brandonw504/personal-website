@@ -1,5 +1,13 @@
 const projectData = [
     {
+        title: "Song Vocal Extraction",
+        description: `Trained a deep convolutional U-Net to isolate vocals from songs.
+        We converted raw audio to spectrograms and trained a mask spectrogram that is applied to the input song to get the vocals.
+        I'm currently implementing a transformer variant of the U-Net and deploying it using Flask.`,
+        techStack: "PyTorch, Scikit-Learn, and Librosa",
+        githubLink: "https://github.com/brandonw504/song-vocal-extraction"
+    },
+    {
         title: "Shazam Social",
         description: `An iOS social media app in which users can use ShazamKit's music recognition to identify songs and make posts.
         Users can add a caption and location to their posts, as well as see each other's posts in either a list view or a map view.
