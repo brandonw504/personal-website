@@ -1,7 +1,7 @@
 const techStackData = [
     {
         name: "General",
-        contents: ["Full Stack Development", "Mobile Development", "Deep Learning", "Github", "PostgreSQL", "MongoDB"]
+        contents: ["Full Stack Development", "Mobile Development", "Machine Learning", "PostgreSQL", "MongoDB", "GIt", "Linux"]
     },
     {
         name: "Languages",
