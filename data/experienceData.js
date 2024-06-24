@@ -35,7 +35,7 @@ const experienceData = [
         title: "Software Engineer @ ",
         time: "Jan 2023 - June 2023",
         description: [
-            "Built and deployed a roommate matching app in React Native for UC Davis Student Housing",
+            "Built and deployed a roommate matching app called RoomU (roomu.aggieworks.org) to the App Store for UC Davis students",
             "Implemented database functions, image caching, and 10+ reusable and reliable UI components"
         ]
     }
