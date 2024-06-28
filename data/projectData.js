@@ -8,6 +8,15 @@ const projectData = [
         githubLink: "https://github.com/brandonw504/song-vocal-extraction"
     },
     {
+        title: "Deep Learning Projects",
+        description: `These projects were part of a graduate course on advanced deep learning at UC Davis.
+        In one of the projects, I made several modifications to the nanoGPT code created by Andrej Karpathy in order to improve performance and runtime.
+        The modifications include reducing dimensionality of key, query, and value vectors, implementing sliding window attention, and changing the MLP architecture.
+        The other project involved performing knowledge distillation in order to improve a small pretrained vision transformer model with the help of a larger model.`,
+        techStack: "PyTorch",
+        githubLink: "https://github.com/brandonw504/deep-learning-projects"
+    },
+    {
         title: "Shazam Social",
         description: `An iOS social media app in which users can use ShazamKit's music recognition to identify songs and make posts.
         Users can add a caption and location to their posts, as well as see each other's posts in either a list view or a map view.

@@ -38,7 +38,7 @@ const About = React.forwardRef((_, ref) => {
                         I&apos;ve worked as a software engineering intern at <span>Apple</span> on the Shazam team, where I had the privilege of delivering production code for a client-facing feature and creating a functional prototype for a research project.
                     </p>
                     <p data-aos="fade-up">
-                        I&apos;ve also had the opportunity to work on several engaging and fulfilling projects while volunteering as a Technical Director at <span>HackDavis</span> and a Technical Product Manager at <span>#include</span>.
+                        I&apos;ve also had the opportunity to work on several engaging and fulfilling projects while volunteering as a Technical Director at <span>HackDavis</span> and a Lead Software Engineer at <span>#include</span>.
                     </p>
                    
                     <h3 data-aos="fade-up">Technologies I use</h3>

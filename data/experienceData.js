@@ -4,10 +4,10 @@ const experienceData = [
         title: "Software Engineering Intern @ ",
         time: "June 2023 - Sept 2023",
         description: [
-            "Developed macOS Music Recognition and ShazamKit features in Swift for >100 million monthly users",
-            "Independently started a digital signal processing research project, developing a functional prototype",
-            "Took initiative to pitch a new feature prototyped for an intern contest to the Health team leadership",
-            "Performed meticulous code reviews and learned best coding and design practices"
+            "Developed the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
+            "Independently started a digital signal processing research project and presented a prototype to Shazam's Director of Product",
+            "Implemented location filtering in Shazam's Events app, impacting over 100 million monthly users",
+            "Demonstrated initiative by pitching my own novel feature prototype to the Health team leadership",
         ]
     },
     {
@@ -15,19 +15,22 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
-            "Built hackdavis.io and judging.hackdavis.io for a student-run hackathon with over 1000 attendees",
-            "Designed and implemented an algorithm to facilitate the judging process and ensure fairness",
-            "Led technical workshops, teaching SwiftUI, Next.js, and full stack web and mobile development skills"
+            "Built hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
+            "Engineered a fair matching and scoring algorithm, ensuring that teams receive judges who match their skills",
+            "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
+            "Developed responsive UI components such as a custom swiping image carousel and an interactive prize list",
+            "Led technical workshops, teaching SwiftUI, Next.js, and full stack web and mobile development",
         ]
     },
     {
         name: "#include",
-        title: "Technical Product Manager @ ",
+        title: "Lead Software Engineer @ ",
         time: "Sept 2023 - Present",
         description: [
-            "Developing a content management system and an e-store framework for local clients in Davis",
-            "Performed code reviews, enforcing industry standards to ensure site reliability and scalability",
-            "Learned system design when architecting codebases using Next.js, Apollo GraphQL, and PostgreSQL"
+            "Currently leading development of a Content Management System and an E-Store framework for 10+ clients",
+            "Engineered a GraphQL API using Apollo and Prisma to create a reusable management system for each store",
+            "Developed a database migration system for MongoDB and wrote unit tests, smoothing developer workflow",
+            "Performed meticulous code reviews, enforcing industry standards to ensure site reliability and scalability",
         ]
     },
     {
@@ -35,8 +38,8 @@ const experienceData = [
         title: "Software Engineer @ ",
         time: "Jan 2023 - June 2023",
         description: [
-            "Built and deployed a roommate matching app called RoomU (roomu.aggieworks.org) to the App Store for UC Davis students",
-            "Implemented database functions, image caching, and 10+ reusable and reliable UI components"
+            "Built and deployed a roommate matching app called RoomU (roomu.aggieworks.org) for UC Davis students in React Native",
+            "Implemented database functions in Supabase, image caching, and 10+ reusable and reliable UI components"
         ]
     }
 ]
