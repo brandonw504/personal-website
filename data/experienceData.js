@@ -27,7 +27,7 @@ const experienceData = [
         title: "Lead Software Engineer @ ",
         time: "Sept 2023 - Present",
         description: [
-            "Currently leading development of a Content Management System and an E-Store framework for 10+ clients",
+            "Currently leading development of a Content Management System and an E-Store framework for local clients",
             "Engineered a GraphQL API using Apollo and Prisma to create a reusable management system for each store",
             "Developed a database migration system for MongoDB and wrote unit tests, smoothing developer workflow",
             "Performed meticulous code reviews, enforcing industry standards to ensure site reliability and scalability",
