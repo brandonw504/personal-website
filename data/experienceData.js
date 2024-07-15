@@ -15,7 +15,7 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
-            "Built hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
+            "Built 2024.hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
             "Engineered a fair matching and scoring algorithm, ensuring that teams receive judges who match their skills",
             "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
             "Developed responsive UI components such as a custom swiping image carousel and an interactive prize list",
