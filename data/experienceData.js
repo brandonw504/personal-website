@@ -6,7 +6,7 @@ const experienceData = [
         description: [
             "Developed the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
             "Independently started a digital signal processing research project and presented a prototype to Shazam's Director of Product",
-            "Implemented location filtering in Shazam's Events app, impacting over 100 million monthly users",
+            "Improved location filtering in Shazam's Events app, impacting over 100 million monthly users",
             "Demonstrated initiative by pitching my own novel feature prototype to the Health team leadership",
         ]
     },
@@ -16,7 +16,7 @@ const experienceData = [
         time: "Oct 2023 - Present",
         description: [
             "Built 2024.hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
-            "Engineered a fair matching and scoring algorithm, ensuring that teams receive judges who match their skills",
+            "Engineered fair matching and scoring algorithms, processing complex user data displayed on a custom dashboard",
             "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
             "Developed responsive UI components such as a custom swiping image carousel and an interactive prize list",
             "Led technical workshops, teaching SwiftUI, Next.js, and full stack web and mobile development",
