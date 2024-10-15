@@ -7,7 +7,7 @@ const experienceData = [
             "Developed the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
             "Independently started a digital signal processing research project and presented a prototype to Shazam's Director of Product",
             "Improved location filtering in Shazam's Events app, impacting over 100 million monthly users",
-            "Demonstrated initiative by pitching my own novel feature prototype to the Health team leadership",
+            "Demonstrated initiative by pitching a sleep apnea detection prototype to 5 members of the Health team leadership",
         ]
     },
     {
@@ -27,10 +27,10 @@ const experienceData = [
         title: "Technical Product Manager @ ",
         time: "Sept 2023 - Present",
         description: [
-            "Leading a team of 25+ engineers to develop a Content Management System and E-Store framework for professional clients",
-            "Engineered a GraphQL API with Prisma and PostgreSQL to manage complex relations between entities",
+            "Leading a team of 20 engineers to develop a Content Management System and E-Store framework for professional clients",
+            "Taught technical workshops on GraphQL, databases, and Next.js, and performed meticulous code reviews",
             "Developed a database migration system for MongoDB and wrote unit tests, smoothing developer workflow",
-            "Performed meticulous code reviews, enforcing industry standards to ensure site reliability and scalability",
+            "Engineered a GraphQL API with Prisma and PostgreSQL to manage complex relations between entities",
         ]
     },
     {
