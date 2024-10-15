@@ -24,7 +24,7 @@ const experienceData = [
     },
     {
         name: "#include",
-        title: "Technical Product Manager @ ",
+        title: "Technical Lead @ ",
         time: "Sept 2023 - Present",
         description: [
             "Leading a team of 20 engineers to develop a Content Management System and E-Store framework for professional clients",
