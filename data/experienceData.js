@@ -16,10 +16,10 @@ const experienceData = [
         time: "Oct 2023 - Present",
         description: [
             "Built 2024.hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
-            "Engineered fair matching and scoring algorithms, processing complex user data displayed on a custom dashboard",
+            "Taught SwiftUI, Next.js, and full stack web and mobile development in technical workshops",
+            "Engineered fair matching and scoring algorithms, processing 1000+ team scores displayed on a custom dashboard",
             "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
-            "Developed responsive UI components such as a custom swiping image carousel and an interactive prize list",
-            "Led technical workshops, teaching SwiftUI, Next.js, and full stack web and mobile development",
+            "Developed 10+ responsive UI components such as a custom swiping image carousel and an interactive prize list",
         ]
     },
     {
