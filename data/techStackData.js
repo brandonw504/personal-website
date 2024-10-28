@@ -1,7 +1,7 @@
 const techStackData = [
     {
         name: "General",
-        contents: ["PostgreSQL", "MongoDB", "Authentication", "Vercel", "Prisma", "Docker", "Git", "Linux"]
+        contents: ["PostgreSQL", "MongoDB", "Unit Testing", "Authentication", "Multithreading", "Docker", "Git", "Linux"]
     },
     {
         name: "Languages",
