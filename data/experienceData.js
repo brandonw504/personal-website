@@ -4,10 +4,10 @@ const experienceData = [
         title: "Software Engineering Intern @ ",
         time: "June 2023 - Sept 2023",
         description: [
-            "Developed the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
-            "Independently started a digital signal processing research project and presented a prototype to Shazam's Director of Product",
+            "Engineered the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
+            "Independently started a digital signal processing research project and presented a product prototype to Shazam's director",
             "Improved location filtering in Shazam's Events app, impacting over 100 million monthly users",
-            "Demonstrated initiative by pitching a sleep apnea detection prototype to 5 members of the Health team leadership",
+            "Demonstrated initiative by pitching a sleep apnea detection prototype to 5 members of the Health team leadership"
         ]
     },
     {
@@ -16,10 +16,10 @@ const experienceData = [
         time: "Oct 2023 - Present",
         description: [
             "Built 2024.hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
-            "Taught SwiftUI, Next.js, and full stack web and mobile development in technical workshops",
+            "Taught SwiftUI, Next.js, Flask deployment, and full stack web and mobile development in 3 technical workshops",
             "Engineered fair matching and scoring algorithms, processing 1000+ team scores displayed on a custom dashboard",
             "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
-            "Developed 10+ responsive UI components such as a custom swiping image carousel and an interactive prize list",
+            "Developed 10+ responsive UI components such as a custom swiping image carousel and an interactive prize list"
         ]
     },
     {
@@ -27,10 +27,10 @@ const experienceData = [
         title: "Technical Lead @ ",
         time: "Sept 2023 - Present",
         description: [
-            "Leading a team of 20 engineers to develop a Content Management System and E-Store framework for professional clients",
-            "Taught technical workshops on GraphQL, databases, and Next.js, and performed meticulous code reviews",
-            "Developed a database migration system for MongoDB and wrote unit tests, smoothing developer workflow",
-            "Engineered a GraphQL API with Prisma and PostgreSQL to manage complex relations between entities",
+            "Leading a team of 20 engineers to develop an E-Store and Content Management System for professional clients",
+            "Taught 5+ technical workshops on GraphQL, SQL/NoSQL databases, Next.js, and system design",
+            "Architected template codebases integrating Apollo GraphQL, Prisma, and Next.js that are used in 20+ different projects",
+            "Mentored 25+ engineers over 2 years on best practices for building and deploying Next.js apps on serverless infrastructure"
         ]
     },
     {
