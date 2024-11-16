@@ -1,11 +1,28 @@
 const projectData = [
     {
+        title: "Shazam Social",
+        description: `An iOS social media app in which users can use ShazamKit's music recognition to identify songs and make posts.
+        Users can add a caption and location to their posts, as well as see each other's posts in either a list view or a map view.
+        From the posts, users can also play the songs that others have Shazamed through Apple Music.
+        The posts are stored in a MongoDB Atlas instance.`,
+        techStack: "SwiftUI, Realm, and MongoDB",
+        githubLink: "https://github.com/brandonw504/shazam-social"
+    },
+    {
         title: "Song Vocal Extraction",
         description: `Trained a deep convolutional U-Net to isolate vocals from songs.
         We converted raw audio to spectrograms and trained a mask spectrogram that is applied to the input song to get the vocals.
         I'm currently implementing a transformer variant of the U-Net and deploying it using Flask.`,
         techStack: "PyTorch, Scikit-Learn, and Librosa",
         githubLink: "https://github.com/brandonw504/song-vocal-extraction"
+    },
+    {
+        title: "Operating Systems Projects",
+        description: `These projects were part of an operating systems course at UC Davis.
+        I implemented a distributed file system similar to AWS S3, a multithreaded web server capable of handling multiple clients simultaneously, 
+        a user mode Unix shell with file redirection and parallel execution, and several Unix utilities.`,
+        techStack: "C++ and Shell Script",
+        githubLink: "https://github.com/brandonw504/ecs150-projects/tree/main"
     },
     {
         title: "Deep Learning Projects",
@@ -15,15 +32,6 @@ const projectData = [
         The other project involved performing knowledge distillation in order to improve a small pretrained vision transformer model with the help of a larger model.`,
         techStack: "PyTorch",
         githubLink: "https://github.com/brandonw504/deep-learning-projects"
-    },
-    {
-        title: "Shazam Social",
-        description: `An iOS social media app in which users can use ShazamKit's music recognition to identify songs and make posts.
-        Users can add a caption and location to their posts, as well as see each other's posts in either a list view or a map view.
-        From the posts, users can also play the songs that others have Shazamed through Apple Music.
-        The posts are stored in a MongoDB Atlas instance.`,
-        techStack: "SwiftUI, Realm, and MongoDB",
-        githubLink: "https://github.com/brandonw504/shazam-social"
     },
     {
         title: "Shoppr",

@@ -6,7 +6,7 @@ const experienceData = [
         description: [
             "Engineered the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
             "Independently started a digital signal processing research project and presented a product prototype to Shazam's director",
-            "Improved location filtering in Shazam's Events app, impacting over 100 million monthly users",
+            "Improved location filtering in Shazam's Events app by prioritizing current location, impacting over 100 million monthly users",
             "Demonstrated initiative by pitching a sleep apnea detection prototype to 5 members of the Health team leadership"
         ]
     },
