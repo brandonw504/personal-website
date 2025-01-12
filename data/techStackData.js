@@ -1,7 +1,7 @@
 const techStackData = [
     {
         name: "General",
-        contents: ["PostgreSQL", "MongoDB", "Unit Testing", "Authentication", "Multithreading", "Google Cloud", "Docker", "Git", "Linux"]
+        contents: ["PostgreSQL", "MongoDB", "Unit Testing", "Authentication", "Multithreading", "Google Cloud", "Docker", "Git", "Linux", "RAG"]
     },
     {
         name: "Languages",
@@ -9,7 +9,7 @@ const techStackData = [
     },
     {
         name: "Libraries/Frameworks",
-        contents: ["SwiftUI", "Next.js", "PyTorch", "Scikit-Learn", "React.js", "React Native", "Apollo GraphQL", "Express", "Node", "Jest", "Auth.js"]
+        contents: ["SwiftUI", "Next.js", "PyTorch", "React.js", "React Native", "Apollo GraphQL", "Node.js", "Playwright", "Auth.js", "LangChain", "Unity"]
     }
 ]
 
