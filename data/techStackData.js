@@ -1,11 +1,11 @@
 const techStackData = [
     {
         name: "General",
-        contents: ["PostgreSQL", "MongoDB", "Unit Testing", "Authentication", "Multithreading", "Docker", "Git", "Linux", "RAG"]
+        contents: ["PostgreSQL", "MongoDB", "Unit Testing", "Authentication", "Multithreading", "Docker", "Git", "Linux/Unix", "RAG", "CUDA"]
     },
     {
         name: "Languages",
-        contents: ["C++", "Swift", "Python", "Javascript", "Typescript", "Java", "HTML & CSS", "SQL", "GraphQL", "R"]
+        contents: ["C++", "Swift", "Python", "Golang", "Javascript", "Typescript", "Java", "HTML & CSS", "SQL", "GraphQL", "R"]
     },
     {
         name: "Libraries/Frameworks",
