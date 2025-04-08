@@ -62,7 +62,7 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    transition: opacity 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
 
     position: absolute;
     z-index: 1;
@@ -81,6 +81,7 @@
     border-width: 5px;
     border-style: solid;
     border-color: var(--backgroundTertiary) transparent transparent transparent;
+    transition: all 350ms ease-in-out;
   }
   
 .tooltip:hover .tooltipText {
