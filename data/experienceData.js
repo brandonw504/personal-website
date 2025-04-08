@@ -6,7 +6,7 @@ const experienceData = [
         description: [
             "Engineered the Music Recognition module in macOS Control Center for the Shazam team using SwiftUI",
             "Independently started a digital signal processing research project and presented a product prototype to Shazam's director",
-            "Improved location filtering in Shazam's Events app by prioritizing current location, impacting over 100 million monthly users",
+            "Addressed issues and built features in the Events app and macOS Control Center, benefiting over 100 million monthly users",
             "Demonstrated initiative by pitching a sleep apnea detection prototype to 5 members of the Health team leadership"
         ]
     },
@@ -15,11 +15,11 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
-            "Built 2024.hackdavis.io and judging.hackdavis.io for California's largest student-run hackathon (1200+ attendees)",
-            "Taught SwiftUI, Next.js, Flask deployment, and full stack web and mobile development in 3 technical workshops",
-            "Engineered fair matching and scoring algorithms, processing 1000+ team scores displayed on a custom dashboard",
-            "Architected an authenticated REST API with MongoDB models to manage 50+ judges and 150+ teams",
-            "Developed 10+ responsive UI components such as a custom swiping image carousel and an interactive prize list"
+            "Built 5+ modular UI components for landing pages (hackdavis.io and 2024.hackdavis.io), collaborating closely with designers",
+            "Developed infrastructure and designed the system for a scalable, reusable judging app (judging.hackdavis.io)",
+            "Designed an authentication system with magic links for seamless, secure registration of 1000+ hackers and judges",
+            "Engineered fair matching and scoring algorithms, processing 500+ team scores with analytics displayed on a custom dashboard",
+            "Architected an authenticated REST API with MongoDB models to manage 1000+ users and 500+ scoring submissions"
         ]
     },
     {
@@ -27,10 +27,10 @@ const experienceData = [
         title: "Technical Lead @ ",
         time: "Sept 2023 - Present",
         description: [
-            "Leading a team of 20 engineers to develop an E-Store and Content Management System for professional clients",
-            "Taught 5+ technical workshops on GraphQL, SQL/NoSQL databases, Next.js, and system design",
-            "Architected template codebases integrating Apollo GraphQL, Prisma, and Next.js that are used in 20+ different projects",
-            "Mentored 25+ engineers over 2 years on best practices for building and deploying Next.js apps on serverless infrastructure"
+            "Leading a team of 15 engineers to develop an E-Commerce Management System for professional clients",
+            "Translated complex user requirements into a modular, scalable system that can be easily maintained long-term",
+            "Taught 5+ technical workshops on GraphQL, SQL/NoSQL databases, Next.js, frontend best practices, and system design",
+            "Architected a template codebase integrating Apollo GraphQL, Prisma, and Next.js that is used in 15+ different projects"
         ]
     },
     {
