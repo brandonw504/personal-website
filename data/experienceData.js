@@ -15,8 +15,8 @@ const experienceData = [
         title: "Technical Director @ ",
         time: "Oct 2023 - Present",
         description: [
+            "Developed a scalable judging app (hub.hackdavis.io) successfully used at 2 hackathons with 2000+ total users",
             "Built 5+ modular UI components for landing pages (hackdavis.io and 2024.hackdavis.io), collaborating closely with designers",
-            "Developed infrastructure and designed the system for a scalable, reusable judging app (judging.hackdavis.io)",
             "Designed an authentication system with magic links for seamless, secure registration of 1000+ hackers and judges",
             "Engineered fair matching and scoring algorithms, processing 500+ team scores with analytics displayed on a custom dashboard",
             "Architected an authenticated REST API with MongoDB models to manage 1000+ users and 500+ scoring submissions"
