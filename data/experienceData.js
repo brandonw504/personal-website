@@ -1,5 +1,13 @@
 const experienceData = [
     {
+        name: "Capital One",
+        title: "Software Engineer @ ",
+        time: "August 2025 - Present",
+        description: [
+            "Rotation in Cloud Controls, Governance and Cost"
+        ]
+    },
+    {
         name: "Apple",
         title: "Software Engineering Intern @ ",
         time: "June 2023 - Sept 2023",
